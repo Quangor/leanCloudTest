@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>leanCloud</title>
+	<script src="https://cdn1.lncld.net/static/js/av-mini-0.5.7.js"></script>
+	<script>
+		AV.initialize("nYGF4qwQCu8XpDQRGNp1GAiC", "66fPM7crLSmMyvyGnxmPvLLU");
+		var TestObject = AV.Object.extend("TestObject");
+		var testObject = new TestObject();
+		testObject.save({foo: "bar"}, {
+		  success: function(object) {
+		  alert("LeanCloud works!");
+		  }
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
